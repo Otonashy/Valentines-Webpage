@@ -24,7 +24,6 @@ function moveChange() {
         pIndex = 0
     }
 
-
     buttonNo.classList.replace(start, classArray[index])
     start = classArray[index]
     index += 1
@@ -32,5 +31,4 @@ function moveChange() {
         index = 0
     }
     console.log(index)
-
 }
