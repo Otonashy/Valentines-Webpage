@@ -16,9 +16,14 @@ buttonNo.addEventListener("click", moveChange)
 function moveChange() {
     comment.innerText = pArray[pIndex]
     pIndex += 1
+    if(pIndex != 7) {
+        comment.classList.replace("commentPoint", "placeHolder")
+    }
     if (pIndex == 7) {
+        comment.classList.replace("placeHolder", "commentPoint")
         pIndex = 0
     }
+
 
     buttonNo.classList.replace(start, classArray[index])
     start = classArray[index]
@@ -27,4 +32,5 @@ function moveChange() {
         index = 0
     }
     console.log(index)
+
 }
